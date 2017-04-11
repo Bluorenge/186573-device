@@ -1,7 +1,7 @@
-# Личный проект «Девайс»
+﻿# Личный проект «Девайс»
 
-* Студент: [Antony Meshkov](https://up.htmlacademy.ru/htmlcss/17/user/186573).
-* Наставник: `Неизвестно`.
+* Студент: [Антон Мешков](https://up.htmlacademy.ru/htmlcss/17/user/186573).
+* Наставник: [Алексей Мачехин](https://htmlacademy.ru/profile/id166029).
 
 ---
 
