@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -23,8 +24,16 @@
             </div>
           </div>
           <nav class="main-nav">
-          <a href="#">Каталог товаров</a>
-            <ul>
+            <a href="#">Каталог товаров</a>
+            <ul class="main-nav-catalog">
+                <li>Виртуальная реальность</li>
+                <li><a href="catalog.html">Моноподы для селфи</a></li>
+                <li>Экшн-камеры</li>
+                <li>Фитнес-браслеты</li>
+                <li>Умные часы</li>
+                <li>Квадрокоптеры</li>
+            </ul>
+            <ul class="main-nav-features">
               <li><a href="#">Доставка</a></li>
               <li><a href="#">Гарантия</a></li>
               <li><a href="#">Контакты</a></li>
@@ -37,7 +46,7 @@
       <section class="slider">
         <article class="slider-item1">
           <div class="content-left">
-            <img src="#">
+            <img src="img/slider-1.png" alt="Палка для селфи" width="384" height="486">
           </div>
           <div class="content-right">
             <span class="slide-num1">01</span>
@@ -62,7 +71,7 @@
         </article>
         <article class="slide-num2">
           <div class="content-left">
-            <img src="#">
+            <img src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
           </div>
           <div class="content-right">
             <span class="slide-num1">02</span>
@@ -79,7 +88,7 @@
         </article>
         <article class="slider-num3">
           <div class="content-left">
-            <img src="#">
+            <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
           </div>
           <div class="content-right">
             <span class="slide-num1">03</span>
@@ -102,37 +111,37 @@
       <section class="product-types">
         <a href="#">
           <span class="product-item">
-            <img src="#" alt="Виртуальная реальность">
+            <img src="img/popular-1.png" alt="Виртуальная реальность" width="97" height="55">
             <span>Виртуальная реальность</span>
           </span>
         </a>
         <a class="product-item" href="#">
           <span>
-            <img src="#" alt="Моноподы для селфи">
+            <img src="img/popular-2.png" alt="Моноподы для селфи" width="86" height="117">
             <span>Моноподы для селфи</span>
           </span>
         </a>
         <a class="product-item" href="#">
           <span>
-            <img src="#" alt="Экшн-камеры">
+            <img src="img/popular-3.png" alt="Экшн-камеры" width="71" height="87">
             <span>Экшн-камеры</span>
           </span>
         </a>
         <a class="product-item" href="#">
           <span>
-            <img src="#" alt="Фитнес-браслеты">
+            <img src="img/popular-4.png" alt="Фитнес-браслеты" width="107" height="65">
             <span>Фитнес-браслеты</span>
           </span>
         </a>
         <a class="product-item" href="#">
           <span>
-            <img src="#" alt="Умные часы">
+            <img src="img/popular-5.png" alt="Умные часы" width="56" height="98">
             <span>Умные часы</span>
           </span>
         </a>
         <a class="product-item" href="#">
           <span>
-            <img src="#" alt="Квадрокоптеры">
+            <img src="img/popular-6.png" alt="Квадрокоптеры" width="132" height="69">
             <span>Квадрокоптеры</span>
           </span>
         </a>
@@ -160,10 +169,10 @@
       </section>
       <section class="brand-container">
         <ul>
-          <li><a href="#"><img src="#" alt="dji"></a></li>
-          <li><a href="#"><img src="#" alt="SP gadgets"></a></li>
-          <li><a href="#"><img src="#" alt="GoPro"></a></li>
-          <li><a href="#"><img src="#" alt="Vive"></a></li>
+          <li><a href="#"><img src="img/brand1.jpg" alt="dji" width="260" height="100"></a></li>
+          <li><a href="#"><img src="img/brand2.jpg" alt="SP gadgets" width="260" height="100"></a></li>
+          <li><a href="#"><img src="img/brand3.jpg" alt="GoPro" width="260" height="100"></a></li>
+          <li><a href="#"><img src="img/brand4.jpg" alt="Vive" width="260" height="100"></a></li>
         </ul>
       </section>
       <section class="index-content">
@@ -181,7 +190,7 @@
         <div class="index-content-right">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <img src="#">
+          <img src="img/map.jpg" alt="Адрес" width="560" height="222">
           <a href="#">Напишите нам</a>
         </div>
       </section>
@@ -190,15 +199,7 @@
       <div class="container">
         <section class="footer-row-top">
           <span>DEVICE</span>
-          <div class="user-block">
-            <div class="login-wrap">
-              <a class="login-out" href="#">Выйти</a>
-            </div>
-            <div class="wrap-right">
-              <a class="compare" href="#">Сравнить</a>
-              <a class="basket" href="#">Корзина</a>
-            </div>
-          </div>
+          <div class="user-block" />
         </section>
         <section class="footer-row-middle">
           <p>г. Москва, ул. Строителей, 15</p>

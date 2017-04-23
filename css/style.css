@@ -1,0 +1,23 @@
+body {
+  font-size: 15px;
+  line-height: 30px;
+  color: black;
+  font-weight: lighter;
+  font-family: 'Open Sans', sans;
+}
+
+h1 .main-title {
+  font-size: 48px;
+  line-height: normal;
+  color: black;
+  font-weight: normal;
+  font-family: 'Gilroy', sans;
+}
+
+h2 {
+  font-size: 47px;
+  line-height: normal;
+  color: black;
+  font-weight: bold;
+  font-family: 'Gilroy', sans;
+}
