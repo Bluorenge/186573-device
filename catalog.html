@@ -3,22 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Device-catalog</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="container">
       <div class="main-header header-wrap">
         <div class="clearfix">
-          <h1 class="main-title">Device</h1>
+          <h1 class="main-title"><a href="index.html">Device</a></h1>
           <form class="search-form cell-left" action="https://echo.htmlacademy.ru" method="post">
             <input type="search" name="search" placeholder="Поиск по сайту">
             <input type="submit" name="submit" value="Найти">
           </form>
           <div class="user-block cell-right">
             <div class="login-wrap">
-              <a class="login" href="#">Войти</a>
               <a class="login" href="#">Валентин Петухов</a>
+              <a class="login" href="#">Войти</a>
             </div>
             <div class="user-wrap-rigth">
               <a class="compare" href="#">Сравнить</a>
@@ -49,13 +49,11 @@
     <main class="container">
       <div class="title-row clearfix">
         <h1 class="page-title">Моноподы для селфи</h1>
-        <div class="breadcrumbs">
-          <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="#">Каталог товаров</a></li>
-            <li>Моноподы для селфи</li>
-          </ul>
-        </div>
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Каталог товаров</a></li>
+          <li>Моноподы для селфи</li>
+        </ul>
       </div>
       <div class="filter+catalog clearfix">
         <div class="filter-sidebar clearfix">
@@ -63,49 +61,57 @@
             <b>Фильтр:</b>
           </div>
           <div class="filter-form-wrap">
-            <form class="filter-form">
+            <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
               <fieldset>
                 <legend>Стоимость</legend>
                 <input id="range-price" type="range" name="range-price" min="0" max="5000" step="100">
-                <label for="range-price">
-                  от 0 до 5000
-                </label>
+                <div class="filter-range">
+                  <span>от 0</span>
+                  <span>до 5000</span>
+                </div>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-color">
                 <legend>Цвет</legend>
-                <input id="black" type="checkbox" name="black">
                 <label for="black">
+                  <input id="black" type="checkbox" name="black">
+                  <span class="checkbox"></span>
                   Черный
                 </label>
-                <input id="white" type="checkbox" name="white">
                 <label for="white">
+                  <input id="white" type="checkbox" name="white">
+                  <span class="checkbox"></span>
                   Белый
                 </label>
-                <input id="blue" type="checkbox" name="blue">
                 <label for="blue">
+                  <input id="blue" type="checkbox" name="blue">
+                  <span class="checkbox"></span>
                   Синий
                 </label>
-                <input id="red" type="checkbox" name="red">
                 <label for="red">
+                  <input id="red" type="checkbox" name="red">
+                  <span class="checkbox"></span>
                   Красный
                 </label>
-                <input id="pink" type="checkbox" name="pink">
                 <label for="pink">
+                  <input id="pink" type="checkbox" name="pink">
+                  <span class="checkbox"></span>
                   Розовый
                 </label>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-bt">
                 <legend>Bluetooth</legend>
-                <input id="bt-yes" type="radio" name="bluetooth" value="Есть" checked>
                 <label for="bt-yes">
+                  <input id="bt-yes" type="radio" name="bluetooth" value="Есть" checked>
+                  <span class="radio"></span>
                   Есть
                 </label>
-                <input id="bt-no" type="radio" name="bluetooth" value="Нет">
                 <label for="bt-no">
+                  <input id="bt-no" type="radio" name="bluetooth" value="Нет">
+                  <span class="radio"></span>
                   Нет
                 </label>
               </fieldset>
-              <button type="submit" name="show">
+              <button class="btn" type="submit" name="show">
                 Показать
               </button>
             </form>
@@ -179,17 +185,17 @@
         <a href="#">Вперед</a>
       </div>
     </main>
-    <footer class="container">
+    <footer class="footer-wrap">
       <div class="main-footer">
         <section class="footer-row-top clearfix">
-          <span class="cell-left">DEVICE</span>
+          <span class="footer-logo cell-left">DEVICE</span>
           <div class="user-block cell-right">
-            <div class="login-wrap">
-              <a class="login-out" href="#">Выйти</a>
-            </div>
             <div class="user-wrap-rigth">
               <a class="compare" href="#">Сравнить</a>
               <a class="basket" href="#">Корзина</a>
+            </div>
+            <div class="login-wrap">
+              <a class="login" href="#">Выйти</a>
             </div>
           </div>
         </section>
@@ -209,7 +215,7 @@
             <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
             <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
           </div>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="htmlacademy-icon" href="https://htmlacademy.ru">HTML Academy</a>
         </section>
       </div>
     </footer>
