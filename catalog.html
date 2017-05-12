@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Device-catalog</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
@@ -46,88 +47,91 @@
         </nav>
       </div>
     </header>
-    <main class="container">
-      <div class="title-row clearfix">
-        <h1 class="page-title">Моноподы для селфи</h1>
-        <ul class="breadcrumbs">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="#">Каталог товаров</a></li>
-          <li>Моноподы для селфи</li>
-        </ul>
+    <main>
+      <div class="container clearfix">
+        <div class="title-row">
+          <h1 class="page-title">Моноподы для селфи</h1>
+          <ul class="breadcrumbs">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">Каталог товаров</a></li>
+            <li>Моноподы для селфи</li>
+          </ul>
+        </div>
       </div>
-      <div class="filter+catalog clearfix">
-        <div class="filter-sidebar clearfix">
+      <div class="catalog-header">
+        <div class="container clearfix">
           <div class="filter-title-wrap">
-            <b>Фильтр:</b>
+            <b class="filter-title">Фильтр:</b>
           </div>
-          <div class="filter-form-wrap">
-            <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-              <fieldset>
-                <legend>Стоимость</legend>
-                <input id="range-price" type="range" name="range-price" min="0" max="5000" step="100">
-                <div class="filter-range">
-                  <span>от 0</span>
-                  <span>до 5000</span>
-                </div>
-              </fieldset>
-              <fieldset class="filter-color">
-                <legend>Цвет</legend>
-                <label for="black">
-                  <input id="black" type="checkbox" name="black">
-                  <span class="checkbox"></span>
-                  Черный
-                </label>
-                <label for="white">
-                  <input id="white" type="checkbox" name="white">
-                  <span class="checkbox"></span>
-                  Белый
-                </label>
-                <label for="blue">
-                  <input id="blue" type="checkbox" name="blue">
-                  <span class="checkbox"></span>
-                  Синий
-                </label>
-                <label for="red">
-                  <input id="red" type="checkbox" name="red">
-                  <span class="checkbox"></span>
-                  Красный
-                </label>
-                <label for="pink">
-                  <input id="pink" type="checkbox" name="pink">
-                  <span class="checkbox"></span>
-                  Розовый
-                </label>
-              </fieldset>
-              <fieldset class="filter-bt">
-                <legend>Bluetooth</legend>
-                <label for="bt-yes">
-                  <input id="bt-yes" type="radio" name="bluetooth" value="Есть" checked>
-                  <span class="radio"></span>
-                  Есть
-                </label>
-                <label for="bt-no">
-                  <input id="bt-no" type="radio" name="bluetooth" value="Нет">
-                  <span class="radio"></span>
-                  Нет
-                </label>
-              </fieldset>
-              <button class="btn" type="submit" name="show">
-                Показать
-              </button>
-            </form>
+          <div class="sort-wrap">
+            <b class="filter-title">Сортировка:</b>
+            <a class="active" href="#">По цене</a>
+            <a href="#">По типу</a>
+            <a href="#">По популярности</a>
+            <div class="sort-arrows">
+              <a href="#"></a>
+              <a href="#"></a>
+            </div>
           </div>
         </div>
-        <div class="catalog clearfix">
-          <div class="sort-wrap">
-              <b>Сортировка:</b>
-              <a class="active" href="#">По цене</a>
-              <a href="#">По типу</a>
-              <a href="#">По популярности</a>
-              <div class="sort-arrows">
-                <a href="#"></a>
-                <a href="#"></a>
+      </div>
+      <div class="filter-catalog">
+        <div class="container">
+          <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset>
+              <legend>Стоимость</legend>
+              <input id="range-price" type="range" name="range-price" min="0" max="5000" step="100">
+              <div class="filter-range">
+                <span>от 0</span>
+                <span>до 5000</span>
               </div>
-            </div>
+            </fieldset>
+            <fieldset class="filter-color">
+              <legend>Цвет</legend>
+              <label for="black">
+                <input id="black" type="checkbox" name="black">
+                <span class="checkbox"></span>
+                Черный
+              </label>
+              <label for="white">
+                <input id="white" type="checkbox" name="white">
+                <span class="checkbox"></span>
+                Белый
+              </label>
+              <label for="blue">
+                <input id="blue" type="checkbox" name="blue">
+                <span class="checkbox"></span>
+                Синий
+              </label>
+              <label for="red">
+                <input id="red" type="checkbox" name="red">
+                <span class="checkbox"></span>
+                Красный
+              </label>
+              <label for="pink">
+                <input id="pink" type="checkbox" name="pink">
+                <span class="checkbox"></span>
+                Розовый
+              </label>
+            </fieldset>
+            <fieldset class="filter-bt">
+              <legend>Bluetooth</legend>
+              <label for="bt-yes">
+                <input id="bt-yes" type="radio" name="bluetooth" value="Есть" checked>
+                <span class="radio"></span>
+                Есть
+              </label>
+              <label for="bt-no">
+                <input id="bt-no" type="radio" name="bluetooth" value="Нет">
+                <span class="radio"></span>
+                Нет
+              </label>
+            </fieldset>
+            <button class="btn" type="submit" name="show">
+              Показать
+            </button>
+          </form>
+        <div class="catalog">
           <article class="catalog-item">
             <a href="#">
               <div class="img-wrap">
@@ -174,7 +178,6 @@
             </a>
           </article>
         </div>
-      </div>
       <div class="pagination container">
         <a href="#">Назад</a>
         <div class="page-wrap">
@@ -184,6 +187,8 @@
         </div>
         <a href="#">Вперед</a>
       </div>
+    </div>
+    </div>
     </main>
     <footer class="footer-wrap">
       <div class="main-footer">
@@ -191,8 +196,12 @@
           <span class="footer-logo cell-left">DEVICE</span>
           <div class="user-block cell-right">
             <div class="user-wrap-rigth">
-              <a class="compare" href="#">Сравнить</a>
-              <a class="basket" href="#">Корзина</a>
+              <div class="compare">
+                <a href="#">Сравнить</a>
+              </div>
+              <div class="basket">
+                <a href="#">Корзина</a>
+              </div>
             </div>
             <div class="login-wrap">
               <a class="login" href="#">Выйти</a>
@@ -211,11 +220,11 @@
         <section class="footer-row-bottom">
           <div class="footer-strip"></div>
           <div class="footer-social-wrap">
-            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            <a class="social-btn social-btn-fb sprite" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-inst sprite" href="#">Инстаграм</a>
+            <a class="social-btn social-btn-tw sprite" href="#">Твиттер</a>
           </div>
-          <a class="htmlacademy-icon" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="htmlacademy-icon sprite" href="https://htmlacademy.ru">HTML Academy</a>
         </section>
       </div>
     </footer>
