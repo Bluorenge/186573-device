@@ -122,7 +122,7 @@ h1 {
 
 h2 {
   margin: 0;
-  margin-top: 65px;
+  margin-top: 75px;
 
   color: black;
 
@@ -167,7 +167,7 @@ input[type="radio"] {
 }
 
 .header-index {
-  padding-bottom: 160px;
+  padding-bottom: 153px;
 }
 
 .search-form {
@@ -355,6 +355,19 @@ input[type=search]:focus + input[type=submit] {
   position: relative;
 }
 
+.main-nav::before {
+  position: absolute;
+  top: 115px;
+  right: 400px;
+
+  width: 100px;
+  height: 7px;
+
+  content: "";
+
+  background: #fff;
+}
+
 .main-nav a {
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -432,7 +445,7 @@ input[type=search]:focus + input[type=submit] {
   display: none;
 
   width: 1160px;
-  padding: 21px 60px 2px 60px;
+  padding: 21px 60px 1px 60px;
 
   background-color: #f7e296;
 
@@ -464,6 +477,10 @@ input[type=search]:focus + input[type=submit] {
   line-height: 36px;
 }
 
+.main-nav-features {
+  font-size: 0;
+}
+
 .main-nav-features li {
   display: inline-block;
 
@@ -471,11 +488,11 @@ input[type=search]:focus + input[type=submit] {
 }
 
 .main-nav-features li:first-child {
-  margin-right: 31px;
+  margin-right: 35px;
 }
 
 .main-nav-features li:nth-child(2) {
-  margin-right: 100px;
+  margin-right: 104px;
 }
 
 .cell-left {
@@ -502,6 +519,12 @@ input[type=search]:focus + input[type=submit] {
 
 .slider-item {
   display: none;
+
+  height: 486px;
+}
+
+.content-left {
+  padding-right: 50px;
 }
 
 .slider-item .content-left img {
@@ -514,8 +537,8 @@ input[type=search]:focus + input[type=submit] {
 
 .slide-num {
   position: absolute;
-  top: 60px;
-  right: 70px;
+  top: 61px;
+  right: 68px;
 
   color: #fff;
 
@@ -525,12 +548,12 @@ input[type=search]:focus + input[type=submit] {
 
 .slider-controls {
   position: absolute;
-  right: 110px;
-  bottom: 148px;
+  right: 105px;
+  bottom: 140px;
 
   display: flex;
 
-  min-width: 90px;
+  min-width: 75px;
   min-height: 30px;
 
   content: "";
@@ -543,10 +566,11 @@ input[type=search]:focus + input[type=submit] {
   width: 10px;
   height: 10px;
 
+  cursor: pointer;
+
   border: 3px solid #000;
   border-radius: 50%;
   background: #fff;
-  cursor: pointer;
 }
 
 .slider-controls label:hover {
@@ -566,7 +590,7 @@ input[type=search]:focus + input[type=submit] {
 .content-right .promo-title {
   position: relative;
 
-  margin-top: 75px;
+  margin-top: 76px;
   margin-bottom: 17px;
 
   letter-spacing: 0.015em;
@@ -583,7 +607,7 @@ input[type=search]:focus + input[type=submit] {
 }
 
 .content-right .promo-text {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .content-right ul {
@@ -742,8 +766,8 @@ input[type=search]:focus + input[type=submit] {
 
 .features-left ul::after {
   position: absolute;
-  top: 0;
-  right: 3px;
+  top: 8px;
+  right: 6px;
 
   width: 7px;
   height: 319px;
@@ -760,7 +784,7 @@ input[type=search]:focus + input[type=submit] {
   display: inline-block;
 
   width: 160px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   text-align: center;
   vertical-align: top;
@@ -801,7 +825,7 @@ input[type=search]:focus + input[type=submit] {
 }
 
 .features-left li:first-child {
-  margin-top: 78px;
+  margin-top: 87px;
 }
 
 #btn-1:checked ~ main .features-left li:nth-child(1),
@@ -852,8 +876,8 @@ input[type=search]:focus + input[type=submit] {
 
 .features-delivery::after {
   position: absolute;
-  top: 15px;
-  right: 0;
+  top: 17px;
+  right: 65px;
 
   width: 136px;
   height: 164px;
