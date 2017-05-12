@@ -19,7 +19,7 @@
           <div class="user-block cell-right">
             <div class="login-wrap">
               <a class="login" href="#">Валентин Петухов</a>
-              <a class="login" href="#">Войти</a>
+              <a class="login" href="#">Выйти</a>
             </div>
             <div class="user-wrap-rigth">
               <a class="compare" href="#">Сравнить</a>
@@ -30,20 +30,26 @@
         <nav class="main-nav clearfix">
           <div class="cell-left">
             <a href="#">Каталог товаров</a>
-            <ul class="main-nav-catalog">
-                <li>Виртуальная реальность</li>
+            <div class="main-nav-catalog">
+              <ul>
+                <li><a href="#">Виртуальная реальность</a></li>
                 <li><a href="catalog.html">Моноподы для селфи</a></li>
-                <li>Экшн-камеры</li>
-                <li>Фитнес-браслеты</li>
-                <li>Умные часы</li>
-                <li>Квадрокоптеры</li>
-            </ul>
+                <li><a href="#">Экшн-камеры</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Фитнесс-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </div>
           </div>
-            <ul class="main-nav-features cell-right">
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Гарантия</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
+          <ul class="main-nav-features cell-right">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -80,10 +86,18 @@
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
               <legend>Стоимость</legend>
-              <input id="range-price" type="range" name="range-price" min="0" max="5000" step="100">
-              <div class="filter-range">
-                <span>от 0</span>
-                <span>до 5000</span>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                </div>
               </div>
             </fieldset>
             <fieldset class="filter-color">
@@ -178,7 +192,7 @@
             </a>
           </article>
         </div>
-      <div class="pagination container">
+      <div class="pagination">
         <a href="#">Назад</a>
         <div class="page-wrap">
           <a class="active" href="#">1</a>
