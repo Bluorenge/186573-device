@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Device-catalog</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
@@ -18,8 +17,8 @@
           </form>
           <div class="user-block cell-right">
             <div class="login-wrap">
-              <a class="login" href="#">Валентин Петухов</a>
-              <a class="login" href="#">Выйти</a>
+              <a class="login" href="#"><span class="login-ico"></span>Валентин Петухов</a>
+              <a class="login-out" href="#">Выйти</a>
             </div>
             <div class="user-wrap-rigth">
               <a class="compare" href="#">Сравнить</a>
@@ -58,9 +57,9 @@
         <div class="title-row">
           <h1 class="page-title">Моноподы для селфи</h1>
           <ul class="breadcrumbs">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="#">Каталог товаров</a></li>
-            <li>Моноподы для селфи</li>
+            <li><a href="index.html">Главная</a><span></span></li>
+            <li><a href="#">Каталог товаров</a><span></span></li>
+            <li><a>Моноподы для селфи</a></li>
           </ul>
         </div>
       </div>
@@ -71,19 +70,22 @@
           </div>
           <div class="sort-wrap">
             <b class="filter-title">Сортировка:</b>
-            <a class="active" href="#">По цене</a>
-            <a href="#">По типу</a>
-            <a href="#">По популярности</a>
+            <ul>
+              <li><a class="active">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По популярности</a></li>
+            </ul>
             <div class="sort-arrows">
-              <a href="#"></a>
-              <a href="#"></a>
+              <a href="#" alt="Сортировка увеличение"></a>
+              <a class="active" href="#" alt="Сортировка уменьшение"></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="filter-catalog">
+      <div class="filter-catalog clearfix">
         <div class="container">
-          <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="filter-wrap">
+            <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
               <legend>Стоимость</legend>
               <div class="range-filter">
@@ -145,62 +147,87 @@
               Показать
             </button>
           </form>
+          </div>
         <div class="catalog">
           <article class="catalog-item">
             <a href="#">
               <div class="img-wrap">
                 <img src="img/item1.jpg" alt="Любительская селфи-палка" width="360" height="380">
+                <div class="img-hover">
+                  <div class="img-hover-text">
+                    <a class="btn" href="#">В корзину</a>
+                    <a>Добавить к сравнению</a>
+                  </div>
+                </div>
               </div>
-              <div class="name-wrap">
-                <p>Любительская селфи-палка</p>
+              <span class="name-wrap clearfix">
+                <p><a href="#">Любительская селфи-палка</a></p>
                 <span>500 руб.</span>
-              </div>
+              </span>
             </a>
           </article>
           <article class="catalog-item">
             <a href="#">
               <div class="img-wrap">
                 <img src="img/item2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
+                <div class="img-hover">
+                  <div class="img-hover-text">
+                    <a class="btn" href="#">В корзину</a>
+                    <a>Добавить к сравнению</a>
+                  </div>
+                </div>
               </div>
-              <div class="name-wrap">
-                <p>Профессиональная селфи-палка</p>
+              <span class="name-wrap clearfix">
+                <p><a href="#">Профессиональная селфи-палка</a></p>
                 <span>1 500 руб.</span>
-              </div>
+              </span>
             </a>
           </article>
           <article class="catalog-item">
             <a href="#">
               <div class="img-wrap">
                 <img src="img/item3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+                <div class="img-hover">
+                  <div class="img-hover-text">
+                    <a class="btn" href="#">В корзину</a>
+                    <a>Добавить к сравнению</a>
+                  </div>
+                </div>
               </div>
-              <div class="name-wrap">
-                <p>Непотопляемая селфи-палка</p>
+              <span class="name-wrap clearfix">
+                <p><a href="#">Непотопляемая селфи-палка</a></p>
                 <span>2 500 руб.</span>
-              </div>
+              </span>
             </a>
           </article>
-          <article class="catalog-item">
+          <article class="catalog-item catalog-item-new">
             <a href="#">
               <div class="img-wrap">
                 <img src="img/item4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
+                <div class="img-hover">
+                  <div class="img-hover-text">
+                    <a class="btn" href="#">В корзину</a>
+                    <a>Добавить к сравнению</a>
+                  </div>
+                </div>
               </div>
-              <div class="name-wrap">
-                <p>Селфи-палка «Следуй за мной»</p>
+              <span class="name-wrap clearfix">
+                <p><a href="#">Селфи-палка «Следуй за мной»</a></p>
                 <span>4 900 руб.</span>
-              </div>
+              </span>
               <span class="new-label">NEW</span>
             </a>
           </article>
+          <div class="pagination">
+            <a href="#">Назад</a>
+            <div class="page-wrap">
+              <a class="active" href="#">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+            </div>
+            <a href="#">Вперед</a>
+          </div>
         </div>
-      <div class="pagination">
-        <a href="#">Назад</a>
-        <div class="page-wrap">
-          <a class="active" href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-        </div>
-        <a href="#">Вперед</a>
-      </div>
     </div>
     </div>
     </main>
@@ -234,11 +261,11 @@
         <section class="footer-row-bottom">
           <div class="footer-strip"></div>
           <div class="footer-social-wrap">
-            <a class="social-btn social-btn-fb sprite" href="#">Фейсбук</a>
-            <a class="social-btn social-btn-inst sprite" href="#">Инстаграм</a>
-            <a class="social-btn social-btn-tw sprite" href="#">Твиттер</a>
+            <a class="social-btn social-btn-fb sprite" href="#" alt="Фейсбук">Фейсбук</a>
+            <a class="social-btn social-btn-inst sprite" href="#" alt="Инстаграм">Инстаграм</a>
+            <a class="social-btn social-btn-tw sprite" href="#" alt="Твиттер">Твиттер</a>
           </div>
-          <a class="htmlacademy-icon sprite" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="htmlacademy-icon sprite" href="https://htmlacademy.ru/intensive/htmlcss" alt="HTML Academy">HTML Academy</a>
         </section>
       </div>
     </footer>
