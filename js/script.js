@@ -44,6 +44,7 @@ form.addEventListener("submit", function(event) {
 writeUsClose.addEventListener("click", function (event) {
   event.preventDefault();
   writeUs.classList.remove("show-popup");
+  writeUs.classList.remove("popup-error");
 });
 
 mapOpen.addEventListener("click", function (event) {
@@ -63,6 +64,7 @@ window.addEventListener("keydown", function (event) {
     }
     if (writeUs.classList.contains("show-popup")) {
       writeUs.classList.remove("show-popup");
+      writeUs.classList.remove("popup-error");
     }
   }
 });
