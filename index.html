@@ -7,12 +7,6 @@
     <link rel="stylesheet" type="text/css" href="css/style-min.css">
   </head>
   <body>
-    <input type="radio" id="slide-1" name="toggle" checked>
-    <input type="radio" id="slide-2" name="toggle">
-    <input type="radio" id="slide-3" name="toggle">
-    <input type="radio" id="btn-1" name="tabs" checked>
-    <input type="radio" id="btn-2" name="tabs">
-    <input type="radio" id="btn-3" name="tabs">
     <header class="container">
       <div class="main-header header-index">
         <div class="clearfix">
@@ -62,6 +56,14 @@
     <main>
       <div class="container">
         <section class="slider">
+          <input type="radio" id="slide-1" name="toggle" checked>
+          <input type="radio" id="slide-2" name="toggle">
+          <input type="radio" id="slide-3" name="toggle">
+          <div class="slider-controls">
+            <label for="slide-1"></label>
+            <label for="slide-2"></label>
+            <label for="slide-3"></label>
+          </div>
           <article class="slider-item clearfix"  id="slide1">
             <div class="content-left cell-left">
               <img src="img/slider-1.png" alt="Палка для селфи" width="384" height="486">
@@ -71,7 +73,7 @@
               <p class="promo-title">Делай селфи, как Бен Стиллер!</p>
               <p class="promo-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
               <a class="btn" href="#">Подробнее</a>
-              <ul>
+              <ul class="promo-features">
                 <li>
                   <span>8,5 м</span>
                   <span>Длина палки</span>
@@ -96,7 +98,7 @@
               <p class="promo-title">Худеем правильно!</p>
               <p class="promo-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <a class="btn" href="#">Подробнее</a>
-              <ul>
+              <ul class="promo-features">
                 <li>
                   <span>48 часов</span>
                   <span>Без подзарядки</span>
@@ -113,7 +115,7 @@
               <p class="promo-title">Порхает как бабочка, жалит как пчела!</p>
               <p class="promo-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               <a class="btn" href="#">Подробнее</a>
-              <ul>
+              <ul class="promo-features">
                 <li>
                   <span>800 м</span>
                   <span>Дальность полета</span>
@@ -125,11 +127,6 @@
               </ul>
             </div>
           </article>
-          <div class="slider-controls">
-            <label for="slide-1"></label>
-            <label for="slide-2"></label>
-            <label for="slide-3"></label>
-          </div>
         </section>
         <section class="product-types">
           <a class="product-item" href="#">
@@ -172,13 +169,14 @@
       </div>
       <div class="features-wrap">
         <section class="features clearfix">
-          <div class="features-left">
-            <ul class="tabs-controls">
-              <li><label for="btn-1">Доставка</label></li>
-              <li><label for="btn-2">Гарантия</label></li>
-              <li><label for="btn-3">Кредит</label></li>
-            </ul>
-          </div>
+          <input type="radio" id="btn-1" name="tabs" checked>
+          <input type="radio" id="btn-2" name="tabs">
+          <input type="radio" id="btn-3" name="tabs">
+          <ul class="tabs-controls features-left">
+            <li><label for="btn-1">Доставка</label></li>
+            <li><label for="btn-2">Гарантия</label></li>
+            <li><label for="btn-3">Кредит</label></li>
+          </ul>
           <div class="features-right">
             <div class="slide features-delivery" id="tab1">
               <h2>Доставка</h2>
