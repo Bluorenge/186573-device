@@ -1098,6 +1098,10 @@ input[type=search]:focus + input[type=submit] {
   margin-bottom: 40px;
 }
 
+.index-content-right .map-container {
+  font-size: 0;
+}
+
 .index-content-right img {
   margin-bottom: 58px;
 }
@@ -1575,6 +1579,8 @@ a.htmlacademy-icon:active {
   margin-left: 182px;
 
   vertical-align: top;
+
+  font-size: 0;
 }
 
 .sort-arrows a {
