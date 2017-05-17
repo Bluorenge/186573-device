@@ -1973,7 +1973,8 @@ input:checked + .radio::before {
   display: block;
 }
 
-.catalog-item p {
+.catalog-item .name-wrap a {
+  display: block;
   float: left;
 
   width: 260px;
